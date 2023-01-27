@@ -1,0 +1,28 @@
+header{
+    background-color: #06131f;
+    height: 5.5vh;
+}
+
+main{
+    background-color: #1d2d3c;
+}
+
+
+
+.disco{
+    background-color: #112030;
+
+
+}
+
+.wrapper{
+    background-color: #112031;
+    height: 94.5vh;
+    width: 90%;
+    margin: 0 auto;
+
+    position: absolute;
+    top: 5.5vh;
+    left: 100px;
+
+}
