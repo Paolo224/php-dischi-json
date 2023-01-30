@@ -1,19 +1,11 @@
 <?php
 
-    $dischiJason = file_get_contents(__DIR__ . "/dischi.json");
+$dischiJason = file_get_contents(__DIR__ . "/dischi.json");
+$dischiJason = json_decode($dischiJason, true);
 
-    
-    $dischiJason = json_decode($dischiJason, true);
+if ($dischiJason == null) {
+    $dischiJason = [];
+}
 
-    if(isset($dischiJason)){
-        
-        header('Content-Type: application/json');
-        
-        echo json_encode($dischiJason);
-
-    }
-
-
-
-
-?>
+header('Content-Type: application/json');
+echo json_encode($dischiJason);
